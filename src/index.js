@@ -12,7 +12,7 @@ import { setupJobs } from '../utils/job.js'
 const app=express();
 // CORS Configuration
 const corsOptions = {
-    origin: 'https://krishi-seva-web-design-second-repo.vercel.app/',
+    origin: 'https://krishi-seva-web-design-second-repo.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 };
 
