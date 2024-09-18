@@ -14,7 +14,7 @@ const app=express();
 const corsOptions = {
     origin: 'https://krishi-seva-web-design-second-repo.vercel.app', // Replace with your frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
-    credentials: true, // If you are sending cookies
+    credentials: true, 
     optionsSuccessStatus: 200 // For legacy browsers
 };
 
