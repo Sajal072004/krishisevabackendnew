@@ -12,7 +12,7 @@ import { setupJobs } from '../utils/job.js'
 const app=express();
 // CORS Configuration
 const corsOptions = {
-    origin: 'https://krishi-seva-web-design-second-repo.vercel.app', // Replace with your frontend URL
+    origin: 'https://krishi-seva-web-design-second-repo.vercel.app/', // Replace with your frontend URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
     credentials: true, 
     optionsSuccessStatus: 200 // For legacy browsers
