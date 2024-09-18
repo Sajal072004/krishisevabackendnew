@@ -10,7 +10,16 @@ import { setupJobs } from '../utils/job.js'
 
 //Middlewares
 const app=express();
-app.use(cors());
+// CORS Configuration
+const corsOptions = {
+    origin: 'https://krishi-seva-web-design-second-repo.vercel.app', // Replace with your frontend URL
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+    credentials: true, // If you are sending cookies
+    optionsSuccessStatus: 200 // For legacy browsers
+};
+
+app.use(cors(corsOptions));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
